@@ -1,0 +1,34 @@
+/* placement du menu */
+#menu {
+    height: 2vh;
+    -webkit-transition: height 2s; 
+    transition: 1s;
+    opacity: 0.8;
+    z-index:-1;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* passage du menu au 1er plan lors du surval de la souris */
+#menu:hover  + #mamap { z-index: -1; }{
+    -webkit-transform:translateZ(20px);
+    transform: translateZ(20px);
+	z-index:20;
+}
+
+/* contenu du menu */
+#menu-contenu {
+    width: 92vw;
+    height: 300px;
+    padding-top: 20px;
+    background: Lightgrey;
+}
+
+/* style de la carte */
+#mamap {
+	height: 96vh;
+	width: 98vw;
+	z-index=0;
+	position:fixed;
+	z-index:1;
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+<!--     SEVRLETS  -->
+	<servlet>
+		<servlet-name>ServletAjoutBars</servlet-name>
+		<servlet-class>fr.eisti.controleur.ServletAjoutBars</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletSelectionBarsJson</servlet-name>
+		<servlet-class>fr.eisti.controleur.ServletSelectionBarsJson</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletSupprBars</servlet-name>
+		<servlet-class>fr.eisti.controleur.ServletSupprBars</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletBarycentre</servlet-name>
+		<servlet-class>fr.eisti.controleur.ServletBarycentre</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletAppelRecuitBars</servlet-name>
+		<servlet-class>fr.eisti.controleur.ServletAppelRecuitBars</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletSelectionBarsAccueil</servlet-name>
+		<servlet-class>fr.eisti.controleur.ServletSelectionBarsAccueil</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletSupprBarsKey</servlet-name>
+		<servlet-class>fr.eisti.controleur.ServletSupprBarsKey</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletAjoutBarForm</servlet-name>
+		<servlet-class>fr.eisti.controleur.ServletAjoutBarForm</servlet-class>
+	</servlet>
+	
+<!-- 	SERVLETS MAPPINGS-->
+	<servlet-mapping>
+		<servlet-name>ServletAjoutBars</servlet-name>
+		<url-pattern>/ajoutBars</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletSupprBars</servlet-name>
+		<url-pattern>/supprBars</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletSelectionBarsJson</servlet-name>
+		<url-pattern>/selectBarsJson</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletBarycentre</servlet-name>
+		<url-pattern>/barycentre</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletAppelRecuitBars</servlet-name>
+		<url-pattern>/appelRecuit</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletSelectionBarsAccueil</servlet-name>
+		<url-pattern>/selectionBarsAccueil</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletSupprBarsKey</servlet-name>
+		<url-pattern>/servletSupprBarsKey</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletAjoutBarForm</servlet-name>
+		<url-pattern>/ajoutBarForm</url-pattern>
+	</servlet-mapping>
+	
+<!-- 	WELCOME FILES -->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

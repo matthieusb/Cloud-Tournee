@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#rouge {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
+    z-index=10;
+float:left;
+}
+#bleu {
+    width: 100px;
+    height: 200px;
+    background: blue;
+    z-index=2;
+}
+
+
+#rouge:hover {
+    height: 300px;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div id="rouge"></div>
+<div id="bleu"></div>
+
+<p>Hover over the div element above, to see the transition effect.</p>
+
+</body>
+</html>
